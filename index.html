@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Test</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+
+<h1>Welcome to the Technical test</h1>
+<table id="questions">
+    <thead>
+
+    </thead>
+    <tbody>
+    <tr>
+        <td class="contentTitle">${question.contentTitle}
+            <ul>
+                <li class="choice1"><input class="add_given_answer" type="button" data-question_id="" name ="" id="Choice1" value="1">${question.choice1}</li>
+                <li class="choice2"><input class="add_given_answer" type="button" data-question_id="" name ="" id="Choice2" value="2">${question.choice2}</li>
+                <li class="choice3"><input class="add_given_answer" type="button" data-question_id="" name ="" id="Choice3" value="3">${question.choice3}</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+
+</table>
+
+<h3>Please insert your information bellow</h3>
+<form id="create-user-form">
+    <input type="text" name ="firstName" title="First Name" placeholder="First Name"/>
+    <input type="text" name="lastName" title="Last Name" placeholder="Last Name"/>
+    <input type="text" name="email" title="Email" placeholder="Email"/>
+    <button type="submit">Save</button>
+</form>
+<table id="user">
+    <thead>
+
+    </thead>
+    <tbody>
+    <tr>
+        <td class="firstName">${user.firstName}</td>
+        <td class="lastName">${user.lastName}</td>
+        <td class="email">${user.email}</td>
+        <td class="result">${user.result}</td>
+    </tr>
+    </tbody>
+
+</table>
+
+<script src="js/lib/jquery-3.3.1.js"></script>
+<script src="js/technical-interview-test.js"></script>
+
+</body>
+</html>
