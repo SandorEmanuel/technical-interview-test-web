@@ -1,3 +1,8 @@
+body {
+    max-width: 800px;
+    margin: auto
+}
+
 #contacts {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -19,4 +24,12 @@
     text-align: left;
     background-color: #4CAF50;
     color: white;
+}
+
+.wrong_answer {
+    background-color: red;
+}
+
+.right_answer {
+    background-color: #4CAF50;
 }
